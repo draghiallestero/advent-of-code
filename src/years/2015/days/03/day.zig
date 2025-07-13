@@ -1,6 +1,6 @@
 const std = @import("std");
 
-const utils = @import("root").utils;
+const utils = @import("../../../../utils.zig");
 
 pub fn run(alloc: std.mem.Allocator, file_contents: []const u8) void {
     part1(alloc, file_contents);

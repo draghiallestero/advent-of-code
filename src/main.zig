@@ -1,8 +1,12 @@
 const std = @import("std");
 
-pub const utils = @import("utils.zig");
+const aoc = @import("aoc");
 
-const year2015 = @import("years/2015/year.zig");
+// Make shorthands available to files
+// zig is weird in this respect. This is the "root" of the main build
+pub const utils = aoc.utils;
+
+const year2015 = aoc.year2015;
 
 pub fn main() !void {
     // Initialize allocator

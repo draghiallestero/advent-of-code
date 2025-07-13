@@ -61,3 +61,7 @@ pub fn run(alloc: std.mem.Allocator, day: u32) void {
         else => unreachable,
     }
 }
+
+test {
+    std.testing.refAllDecls(@This());
+}
